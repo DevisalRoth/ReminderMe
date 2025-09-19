@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct NotificationReminderApp: App {
+    init() {
+        NotificationManager.shared.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
